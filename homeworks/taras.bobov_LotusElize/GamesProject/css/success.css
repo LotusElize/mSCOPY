@@ -1,15 +1,13 @@
 
-.main {
+.main__success {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
 }
 
-.main__h1 {
+.success__title {
   font-size: 48px;
   font-weight: 700;
   line-height: 32px;
