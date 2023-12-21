@@ -1,5 +1,4 @@
-
-.main__login{
+.main__login {
   max-width: 100%;
   display: flex;
   justify-content: center;
@@ -12,7 +11,6 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .login_form {
@@ -20,7 +18,7 @@
   height: 520px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 177px;
+  margin: 0 20px 177px 20px;
 }
 
 .login_title h1 {
@@ -28,19 +26,19 @@
   margin-top: 0;
   text-align: center;
   font-size: 48px;
-  font-style: normal;
   font-weight: 700;
   line-height: 32px;
 }
 
 .form_input__info {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-
-.email,.password {
+.email,
+.password {
   display: flex;
   flex-direction: column;
   height: 141px;
@@ -50,39 +48,41 @@
   height: 40px;
 }
 
+
 .add__info_place {
-  width: 575px;
+  width: 100%;
   height: 70px;
   color: #221F1F;
   padding-left: 20px;
   border-radius: 6px;
-  border: .6px solid #A9A9A9;
   font-size: 14px;
   margin-top: 22px;
   margin-bottom: 5px;
+  outline: none;
+  border-radius: 6px;
+  border: 0.6px solid #A9A9A9;
 }
 
 .add__info_place:focus {
-  outline: 1px solid #EF4934;
+    border-bottom: 5px solid #EF4934;
 }
 
-.add__info_place:placeholder {
+.add__info_place::placeholder {
   color: #A9A9A9;
 }
 
-/*custom checkbox*/
 
 .verify-container {
-  display: block;
+  display: flex;
+  align-items: center;
 }
-
 
 .verify-container input {
   padding: 0;
   height: initial;
   width: initial;
   margin-bottom: 0;
-  display: hidden;
+  display: none;
   cursor: pointer;
 }
 
@@ -118,13 +118,9 @@
   transform: rotate(45deg);
 }
 
-/*end*/
-
 .input_name {
   font-size: 22px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
 }
 
 .btn__success {
@@ -135,10 +131,9 @@
   border: none;
   color: #FFF;
   font-size: 22px;
-  font-style: normal;
   font-weight: 600;
   line-height: normal;
-  transition: font-size .1s ease-in;
+  transition: font-size 0.1s ease-in;
   cursor: pointer;
 }
 
@@ -149,7 +144,6 @@
 .btn__success:active {
   font-size: 24px;
 }
-/* error style */
 
 .errors_info {
   color: #F7250B;

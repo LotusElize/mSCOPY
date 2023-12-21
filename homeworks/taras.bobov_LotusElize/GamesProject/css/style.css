@@ -1,46 +1,10 @@
-*,::before,::after {
-  box-sizing: border-box;
-}
-
-/* Планшетні стилі */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .header {
-    height: 60px; /* зміна висоти для планшетів */
-    /* інші зміни, які вам потрібні для планшетів */
-  }
-
-  .nav__menu {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap:50px;
-    height: 18px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .footer {
-    /* Ваші стилі для планшетів */
-  }
-}
-
-/* Смартфонні стилі */
-@media (max-width: 767px) {
-  .header {
-    /* Ваші стилі для смартфонів */
-  }
-
-  .footer {
-    /* Ваші стилі для смартфонів */
-  }
-}
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-a {
-  text-decoration: none;
-  color: #FFF;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
 }
+
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -49,11 +13,16 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
 .header {
   max-width: 100%;
   height: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -65,9 +34,10 @@ body {
 .header__wrap {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   align-items: center;
   padding: 11px 52px 11px 53px;
-  width: 1280px;
+  margin: 0 auto;
 }
 
 .header__logo {
@@ -78,8 +48,7 @@ body {
 .nav__menu {
   display: flex;
   align-items: center;
-  gap:50px;
-  height: 18px;
+  gap: 50px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -97,7 +66,6 @@ body {
 .menu__nav-link {
   font-size: 16px;
   color: #FFF;
-  font-size: 16px;
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
@@ -115,14 +83,12 @@ body {
 .main__section {
   max-width: 1280px;
   display: flex;
-  flex-direction: row;
   gap: 68px;
-  margin-top: 60px;
-  margin-bottom: 238px;
+  margin: 60px auto 238px;
 }
 
 .section__img {
-  width: 532px;
+  max-width: 532px;
   height: 356px;
   box-shadow: 0 0 50px 5px;
   border-radius: 22px;
@@ -139,7 +105,7 @@ body {
 .about__title {
   width: 100%;
   height: 46px;
-  margin: 0 0 24px;
+  margin-bottom: 24px;
 }
 
 .about__me_title {
@@ -150,11 +116,12 @@ body {
   margin: 0;
 }
 
-.about__me_info{
+.about__me_info {
   display: flex;
   flex-direction: column;
-  gap:22px;
+  gap: 22px;
 }
+
 .about__text {
   font-size: 22px;
   font-weight: 400;
@@ -164,8 +131,6 @@ body {
 .section__link {
   color: #F04934;
 }
-
-/* footer */
 
 .footer {
   max-width: 100%;
